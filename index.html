@@ -11,17 +11,19 @@
     <div class="proposal-container">
         <h1>Will you be my valentine?</h1>
         <h2 id="question-text"></h2>
-        <form action="https://formspree.io/f/mayrerln" method="POST">
+        <form action="https://formspree.io/f/mayrerln" method="POST" id="valentine-form">
             <div>
                 <div class="image-container" id="image-container">
                     <div id="teddy-container"></div>
                 </div>
                 <br>
                 <div class="options">
-                    <div class="option" id="yes" type="submit" onclick="showResponse(true)">Yes</div>
-                    <div class="option" id="no" onclick="showResponse(false)">No</div>
+                    <button class="option" id="yes" type="submit" onclick="setYesMessage()">Yes</button>
+                    <div class="option" id="no">No</div>
                 </div> 
             </div>
+            <!-- Hidden input for predefined message -->
+            <input type="hidden" name="message" id="hidden-message" value="">
         </form>        
     </div>    
     <div class="response-container" id="response-container">

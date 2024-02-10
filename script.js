@@ -1,4 +1,8 @@
 let responseCount = 1;
+function setYesMessage() {
+    document.getElementById('hidden-message').value = 'Yes';
+}
+
 document.getElementById('yes').addEventListener('click', function () {
     showResponse(true);
     animateTeddy();
@@ -69,3 +73,4 @@ function getNoText(count) {
             return { text: 'Please say yes!', image: 'pics/teddy fight.jpeg' };
     }
 }
+
