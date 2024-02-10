@@ -18,6 +18,7 @@ function showResponse(isYes) {
     if (isYes) {
         questionText.innerText = 'Woah!!! Thankyuuuu...';
         teddyContainer.style.backgroundImage = "url('pics/teddy kiss.png')";
+        document.querySelector('.options').style.display = 'none';
     } else {
         questionText.innerText = noText.text;
         yesOption.classList.add(`increased-size-${responseCount}`);
@@ -47,25 +48,26 @@ function animateTeddy() {
 function getNoText(count) {
     switch (count) {
         case 1:
-            return { text: 'Are you really sure?', image: 'pics/teddy think.jpeg' };
+            return { text: 'Are you really, really sure?', image: 'pics/teddy think.jpeg' };
         case 2:
             return { text: 'Any second thoughts?', image: 'pics/teddy cute.jpeg' };
         case 3:
-            return { text: 'How about Cute Fights?', image: 'pics/teddy fight.jpeg' };
+            return { text: 'How about some cute fights?', image: 'pics/teddy fight.jpeg' };
         case 4:
-            return { text: 'How about Cozy Cuddles?', image: 'pics/teddy hug.jpeg' };
+            return { text: 'How about cozy cuddles?', image: 'pics/teddy hug.jpeg' };
         case 5:
-            return { text: 'Still No?', image: 'pics/teddy sad.jpeg' };
+            return { text: 'Still saying no, my sunshine?', image: 'pics/teddy sad.jpeg' };
         case 6:
-            return { text: 'Lets Make memories?', image: 'pics/teddy love.jpeg' };
+            return { text: 'Let’s make some adorable memories?', image: 'pics/teddy love.jpeg' };
         case 7:
-            return { text: 'Its gonna be fun!', image: 'pics/teddyhug.jpeg' };
+            return { text: 'It’s gonna be so much fun! Come on!', image: 'pics/teddyhug.jpeg' };
         case 8:
-            return { text: 'Wanna think again?', image: 'pics/teddy2.jpeg' };
+            return { text: 'Take a cute moment to think again?', image: 'pics/teddy2.jpeg' };
         case 9:
-            return { text: '100% sure?', image: 'pics/teddy3.jpeg' };
+            return { text: '100% sure you want to miss me?', image: 'pics/teddy3.jpeg' };
         default:
             return { text: 'Please say yes!', image: 'pics/teddy fight.jpeg' };
     }
 }
+
 
