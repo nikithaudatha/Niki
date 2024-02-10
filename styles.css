@@ -107,9 +107,13 @@ body {
     margin-top: 20px;
 }
 
-.image-container img {
-    width: 100%; /* Make images fill the container */
-    display: none; /* Initially hide all images */
+.image-container img{
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
   #teddy-container.heart-animation {
     animation: heartAnimation 1s infinite;
