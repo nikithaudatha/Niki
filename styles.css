@@ -1,3 +1,4 @@
+
 body {
     background-image: url('pics/background.gif');
     background-size: cover;
@@ -6,12 +7,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Updated to column for centering in both directions */
     height: 100vh;
 }
 
-
 .proposal-container {
     text-align: center;
+    margin-bottom: 20px; /* Added margin to separate from options */
 }
 
 .options {
@@ -23,7 +25,7 @@ body {
 .option {
     cursor: pointer;
     padding: 10px 20px;
-    margin: 0 100px;
+    margin: 0 10px; /* Adjust the margin */
     border: 2px solid #333;
     border-radius: 5px;
     font-size: 16px;
@@ -47,13 +49,12 @@ body {
 }
 
 #teddy-container {
-    position: absolute;
+    position: relative; /* Updated to relative for centering */
     width: 100px;
     height: 100px;
     background-size: cover;
     transition: transform 0.5s ease-in-out;
-    top: 150px; 
-    left: 600px;
+    margin: 0 auto; /* Center horizontally */
 }
 
 .options {
@@ -65,7 +66,7 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-/* Style for increased size of 'yes' option */
+
 .option.increased-size-1 {
     transform: scale(1.2);
 }
@@ -107,15 +108,6 @@ body {
     margin-top: 20px;
 }
 
-.image-container img{
-    position: absolute;
-    bottom: 10px; /* Adjust this value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+.image-container {
     text-align: center;
 }
-  #teddy-container.heart-animation {
-    animation: heartAnimation 1s infinite;
-  }
-  
