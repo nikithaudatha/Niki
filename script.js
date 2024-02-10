@@ -69,5 +69,3 @@ function getNoText(count) {
             return { text: 'Please say yes!', image: 'pics/teddy fight.jpeg' };
     }
 }
-
-
