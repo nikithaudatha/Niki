@@ -52,23 +52,23 @@ function animateTeddy() {
 function getNoText(count) {
     switch (count) {
         case 1:
-            return { text: 'Are you really, really sure?', image: 'pics/teddy think.jpeg' };
+           return { text: 'Take a cute moment to think again?', image: 'pics/teddy2.jpeg' };
         case 2:
-            return { text: 'Any second thoughts?', image: 'pics/teddy cute.jpeg' };
-        case 3:
             return { text: 'How about some cute fights?', image: 'pics/teddy fight.jpeg' };
+        case 3:
+            return { text: 'Any second thoughts? Think again!', image: 'pics/teddy cute.jpeg' };        
         case 4:
             return { text: 'How about cozy cuddles?', image: 'pics/teddy hug.jpeg' };
         case 5:
-            return { text: 'Still saying no, my sunshine?', image: 'pics/teddy sad.jpeg' };
+            return { text: 'Still saying no, Teasing me?', image: 'pics/teddy sad.jpeg' };
         case 6:
             return { text: 'Let’s make some adorable memories?', image: 'pics/teddy love.jpeg' };
         case 7:
             return { text: 'It’s gonna be so much fun! Come on!', image: 'pics/teddyhug.jpeg' };
         case 8:
-            return { text: 'Take a cute moment to think again?', image: 'pics/teddy2.jpeg' };
+            return { text: 'Are you really, really sure? Think again!', image: 'pics/teddy think.jpeg' };   
         case 9:
-            return { text: '100% sure you want to miss me?', image: 'pics/teddy3.jpeg' };
+            return { text: 'Let’s Date?', image: 'pics/teddy3.jpeg' };
         default:
             return { text: 'Please say yes!', image: 'pics/teddy fight.jpeg' };
     }
