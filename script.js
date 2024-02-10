@@ -23,14 +23,11 @@ function showResponse(isYes) {
         yesOption.classList.add(`increased-size-${responseCount}`);
         teddyContainer.style.backgroundImage = `url('${noText.image}')`;      
     }
-
-    // Increment response count
     responseCount++;
 
-    // Reset response count after a specific number of responses
-    const maxResponses = 20; // Change this to your desired maximum number of responses
+    const maxResponses = 10; 
     if (responseCount > maxResponses) {
-        responseCount = 0; // Reset response count to 1
+        responseCount = 0; 
         for (let i = 1; i <= maxResponses; i++) {
             yesOption.classList.remove(`increased-size-${i}`);
         }
@@ -50,19 +47,19 @@ function animateTeddy() {
 function getNoText(count) {
     switch (count) {
         case 1:
-            return { text: 'Are you sure?', image: 'pics/teddy think.jpeg' };
+            return { text: 'Are you really sure?', image: 'pics/teddy think.jpeg' };
         case 2:
             return { text: 'Any second thoughts?', image: 'pics/teddy cute.jpeg' };
         case 3:
-            return { text: 'Cute fights?', image: 'pics/teddy fight.jpeg' };
+            return { text: 'How about Cute Fights?', image: 'pics/teddy fight.jpeg' };
         case 4:
-            return { text: 'Cozy cuddles?', image: 'pics/teddy hug.jpeg' };
+            return { text: 'How about Cozy Cuddles?', image: 'pics/teddy hug.jpeg' };
         case 5:
-            return { text: 'Still NO?', image: 'pics/teddy sad.jpeg' };
+            return { text: 'Still No?', image: 'pics/teddy sad.jpeg' };
         case 6:
-            return { text: 'Create memories?', image: 'pics/teddy love.jpeg' };
+            return { text: 'Lets Make memories?', image: 'pics/teddy love.jpeg' };
         case 7:
-            return { text: 'A lot of fun?', image: 'pics/teddyhug.jpeg' };
+            return { text: 'Its gonna be fun!', image: 'pics/teddyhug.jpeg' };
         case 8:
             return { text: 'Wanna think again?', image: 'pics/teddy2.jpeg' };
         case 9:
